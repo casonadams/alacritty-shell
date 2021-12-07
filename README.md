@@ -14,3 +14,24 @@ zinit wait lucid for \
   casonadams/base16-shell.zsh \
   ;
 ```
+
+## change terminal colors
+
+```sh
+# gruvbox dark theme
+base16_gruvbox-dark-medium
+```
+
+```sh
+# gruvbox dark light
+base16_gruvbox-light-medium
+```
+
+## using with vim
+
+install [walh](https://github.com/casonadams/walh) colorscheme
+
+```vimrc
+set notermguicolors
+colorscheme walh-eighties
+```
