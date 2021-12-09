@@ -1,8 +1,6 @@
-# base16-shell
+# walh-shell
 
-zsh base16-shell plugin
-
-installs and setups up [base16-shell](https://github.com/chriskempson/base16-shell)
+zsh walh-shell plugin
 
 ## example install with zinit
 
@@ -11,20 +9,20 @@ zinit wait lucid for \
   OMZL::key-bindings.zsh \
   OMZL::history.zsh \
   OMZP::git \
-  casonadams/base16-shell.zsh \
+  casonadams/walh-shell.zsh \
   ;
 ```
 
 ## change terminal colors
 
 ```sh
-# gruvbox dark theme
-base16_gruvbox-dark-medium
+# onedark theme
+walh_onedark
 ```
 
 ```sh
-# gruvbox dark light
-base16_gruvbox-light-medium
+# onelight theme
+walh_onelight
 ```
 
 ## using with vim
