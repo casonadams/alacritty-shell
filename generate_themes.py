@@ -1,9 +1,13 @@
-#!/usr/bin/env python
+#/usr/bin/env python
 
 import chevron
 import os
+import shutil
 import subprocess
 import toml
+
+shutil.rmtree("scripts")
+os.mkdir("scripts")
 
 for dir in os.listdir("themes"):
     theme_name = dir.split(".")[0]
