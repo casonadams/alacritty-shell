@@ -115,7 +115,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   put_template_custom Pm 282c34 # cursor text
 else
   put_template_var 10 $color_foreground
-  if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
+  if [ "$WALH_SHELL_SET_BACKGROUND" != false ]; then
     put_template_var 11 $color_background
     if [ "${TERM%%-*}" = "rxvt" ]; then
       put_template_var 708 $color_background # internal border (rxvt)

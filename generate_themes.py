@@ -113,7 +113,7 @@ for dir in os.listdir("themes"):
         }
         render = chevron.render(**args)
 
-    script_file = f"scripts/walh_{theme_name}.sh"
+    script_file = f"scripts/{theme_name}.sh"
     with open(script_file, "w") as f:
         for r in iter(render.splitlines()):
             f.write(f"{r}\n")
