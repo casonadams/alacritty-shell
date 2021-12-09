@@ -30,7 +30,7 @@ _walh()
   fi
 }
 FUNC
-for script in "$script_dir"/scripts/walh*.sh; do
+for script in "$script_dir"/scripts/*.sh; do
   script_name=${script##*/}
   script_name=${script_name%.sh}
   theme=${script_name#*-}
