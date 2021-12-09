@@ -33,7 +33,7 @@ FUNC
 for script in "$script_dir"/scripts/*.sh; do
   script_name=${script##*/}
   script_name=${script_name%.sh}
-  theme=${script_name#*-}
+  theme=${script_name}
   func_name="walh_${theme}"
   echo "alias $func_name=\"_walh \\\"$script\\\" $theme\""
 done;
