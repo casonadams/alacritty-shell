@@ -1,0 +1,21 @@
+background = '#2e3440'
+foreground = '#e5e9f0'
+
+color00 = '#2e3440'
+color01 = '#bf616a'
+color02 = '#a3be8c'
+color03 = '#ebcb8b'
+color04 = '#8fa1b3'
+color05 = '#b48ead'
+color06 = '#96b5b4'
+color07 = '#e5e9f0'
+
+color08 = '#4c566a'
+color15 = '#8fbcbb'
+
+color16 = '#d08770'
+color17 = '#5e81ac'
+color18 = '#3b4252'
+color19 = '#434c5e'
+color20 = '#d8dee9'
+color21 = '#eceff4'
