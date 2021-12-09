@@ -1,8 +1,7 @@
-if [ ! -d "${HOME}/.config/base16-shell" ]; then
-    git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-fi
+#!/usr/bin/env zsh
 
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
+BASE16_SHELL=$(dirname ${(%):-%x})
+
+[ -n "$PS1" ] \
+&& [ -s "$BASE16_SHELL/profile_helper.sh" ] \
+&&  eval "$("$BASE16_SHELL/profile_helper.sh")"
