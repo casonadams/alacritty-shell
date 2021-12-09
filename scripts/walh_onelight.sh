@@ -1,36 +1,36 @@
 #!/usr/bin/env bash
 
 # Normal
-color00="{{base00-hex-r}}/{{base00-hex-g}}/{{base00-hex-b}}" # Black
-color01="{{base01-hex-r}}/{{base01-hex-g}}/{{base01-hex-b}}" # Red
-color02="{{base02-hex-r}}/{{base02-hex-g}}/{{base02-hex-b}}" # Green
-color03="{{base03-hex-r}}/{{base03-hex-g}}/{{base03-hex-b}}" # Yellow
-color04="{{base04-hex-r}}/{{base04-hex-g}}/{{base04-hex-b}}" # Blue
-color05="{{base05-hex-r}}/{{base05-hex-g}}/{{base05-hex-b}}" # Magenta
-color06="{{base06-hex-r}}/{{base06-hex-g}}/{{base06-hex-b}}" # Cyan
-color07="{{base07-hex-r}}/{{base07-hex-g}}/{{base07-hex-b}}" # White
+color00="fa/fa/fa" # Black
+color01="ca/12/43" # Red
+color02="50/a1/4f" # Green
+color03="c1/84/01" # Yellow
+color04="40/78/f2" # Blue
+color05="a6/26/a4" # Magenta
+color06="01/84/bc" # Cyan
+color07="38/3a/42" # White
 
 # Bright
-color08="{{base08-hex-r}}/{{base08-hex-g}}/{{base08-hex-b}}" # Bright Black
-color09="{{base01-hex-r}}/{{base01-hex-g}}/{{base01-hex-b}}" # Red
-color10="{{base02-hex-r}}/{{base02-hex-g}}/{{base02-hex-b}}" # Green
-color11="{{base03-hex-r}}/{{base03-hex-g}}/{{base03-hex-b}}" # Yellow
-color12="{{base04-hex-r}}/{{base04-hex-g}}/{{base04-hex-b}}" # Blue
-color13="{{base05-hex-r}}/{{base05-hex-g}}/{{base05-hex-b}}" # Magenta
-color14="{{base06-hex-r}}/{{base06-hex-g}}/{{base06-hex-b}}" # Cyan
-color15="{{base15-hex-r}}/{{base15-hex-g}}/{{base15-hex-b}}" # Bright White
+color08="a0/a1/a7" # Bright Black
+color09="ca/12/43" # Red
+color10="50/a1/4f" # Green
+color11="c1/84/01" # Yellow
+color12="40/78/f2" # Blue
+color13="a6/26/a4" # Magenta
+color14="01/84/bc" # Cyan
+color15="09/0a/0b" # Bright White
 
 # 256 color
-color16="{{base16-hex-r}}/{{base16-hex-g}}/{{base16-hex-b}}" # Orange
-color17="{{base17-hex-r}}/{{base17-hex-g}}/{{base17-hex-b}}" # OrangeRed
-color18="{{base18-hex-r}}/{{base18-hex-g}}/{{base18-hex-b}}" # Black5%
-color19="{{base19-hex-r}}/{{base19-hex-g}}/{{base18-hex-b}}" # Black10%
-color20="{{base20-hex-r}}/{{base20-hex-g}}/{{base19-hex-b}}" # White5%
-color21="{{base21-hex-r}}/{{base21-hex-g}}/{{base21-hex-b}}" # White10%
+color16="d7/5f/00" # Orange
+color17="98/68/01" # OrangeRed
+color18="f0/f0/f1" # Black5%
+color19="e5/e5/f1" # Black10%
+color20="69/6c/e6" # White5%
+color21="20/22/27" # White10%
 
 # Base
-color_background="{{background-hex-r}}/{{background-hex-g}}/{{background-hex-b}}" # Black
-color_foreground="{{foreground-hex-r}}/{{foreground-hex-g}}/{{foreground-hex-b}}" # White
+color_background="fa/fa/fa" # Black
+color_foreground="38/3a/42" # White
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -106,13 +106,13 @@ put_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg {{foreground-hex}} # foreground
-  put_template_custom Ph {{background-hex}} # background
-  put_template_custom Pi {{base15-hex}}     # bold color
-  put_template_custom Pj {{background-hex}} # selection color
-  put_template_custom Pk {{base03-hex}}     # selected text color
-  put_template_custom Pl {{foreground-hex}} # cursor
-  put_template_custom Pm {{background-hex}} # cursor text
+  put_template_custom Pg 383a42 # foreground
+  put_template_custom Ph fafafa # background
+  put_template_custom Pi 090a0b     # bold color
+  put_template_custom Pj fafafa # selection color
+  put_template_custom Pk c18401     # selected text color
+  put_template_custom Pl 383a42 # cursor
+  put_template_custom Pm fafafa # cursor text
 else
   put_template_var 10 $color_foreground
   if [ "$WALH_SHELL_SET_BACKGROUND" != false ]; then

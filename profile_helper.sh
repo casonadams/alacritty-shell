@@ -11,7 +11,7 @@ script_dir=$(cd "$(dirname "$file_name")" && pwd)
 
 if [ -f ~/.walh_theme ]; then
   script_name=$(basename "$(realpath ~/.walh_theme)" .sh)
-  echo "export BASE16_THEME=${script_name#*-}"
+  echo "export WALH_THEME=${script_name#*-}"
   echo ". ~/.walh_theme"
 fi
 cat <<'FUNC'
@@ -21,10 +21,10 @@ _walh()
   local theme=$2
   [ -f $script ] && . $script
   ln -fs $script ~/.walh_theme
-  export BASE16_THEME=${theme}
+  export WALH_THEME=${theme}
   echo -e "if \0041exists('g:colors_name') || g:colors_name != 'walh-$theme'\n  colorscheme walh-$theme\nendif" >| ~/.vimrc_background
-  if [ -n ${BASE16_SHELL_HOOKS:+s} ] && [ -d "${BASE16_SHELL_HOOKS}" ]; then
-    for hook in $BASE16_SHELL_HOOKS/*; do
+  if [ -n ${WALH_SHELL_HOOKS:+s} ] && [ -d "${WALH_SHELL_HOOKS}" ]; then
+    for hook in $WALH_SHELL_HOOKS/*; do
       [ -f "$hook" ] && [ -x "$hook" ] && "$hook"
     done
   fi
