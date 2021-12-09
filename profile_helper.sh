@@ -36,3 +36,5 @@ for script in "$script_dir"/scripts/base16*.sh; do
   theme=${script_name#*-}
   func_name="base16_${theme}"
   echo "alias $func_name=\"_base16 \\\"$script\\\" $theme\""
+done;
+
