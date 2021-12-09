@@ -109,8 +109,8 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   put_template_custom Pg 383a42 # foreground
   put_template_custom Ph fafafa # background
   put_template_custom Pi 090a0b     # bold color
-  put_template_custom Pj fafafa # selection color
-  put_template_custom Pk c18401     # selected text color
+  put_template_custom Pj c18401 # selection color
+  put_template_custom Pk fafafa     # selected text color
   put_template_custom Pl 383a42 # cursor
   put_template_custom Pm fafafa # cursor text
 else
