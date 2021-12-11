@@ -1,0 +1,21 @@
+background = "#262626"
+foreground = "#BCBCBC"
+
+color00 = "#262626"
+color01 = "#AF5F5F"
+color02 = "#5F875F"
+color03 = "#87875F"
+color04 = "#5F87AF"
+color05 = "#5F5F87"
+color06 = "#5F8787"
+color07 = "#BCBCBC"
+
+color08 = "#444444"
+color15 = "#FFFFFF"
+
+color16 = "#FF8700"
+color17 = "#FFFFAF"
+color18 = "#333333"
+color19 = "#8787AF"
+color20 = "#5FAFAF"
+color21 = '#ebdbb2'
