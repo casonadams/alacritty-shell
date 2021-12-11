@@ -21,7 +21,7 @@ color14="5F/87/87" # Cyan
 color15="FF/FF/FF" # Bright White
 
 # 256 color
-color16="FF/87/00" # Orange
+color16="b0/87/5e" # Orange
 color17="FF/FF/AF" # OrangeRed
 color18="33/33/33" # Black5%
 color19="87/87/33" # Black10%
