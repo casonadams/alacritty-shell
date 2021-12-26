@@ -23,8 +23,8 @@ color15="1d/1f/21" # Bright White
 # 256 color
 color16="f5/87/1f" # Orange
 color17="a3/68/5a" # OrangeRed
-color18="e0/e0/e0" # Black5%
-color19="d6/d6/e0" # Black10%
+color18="f2/f2/f2" # Black5%
+color19="d6/d6/f2" # Black10%
 color20="96/98/d6" # White5%
 color21="28/2a/2e" # White10%
 
