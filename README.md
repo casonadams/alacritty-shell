@@ -16,7 +16,7 @@ zinit wait lucid for \
 ## manual install
 
 ```sh
-git clone https://github.com/casonadams/walh-shell.zsh.git ~/.config/walh-shell.zsh
+git clone https://github.com/casonadams/walh-shell.zsh.git ~/.config/walh-shell
 ```
 
 ### bash/zsh
