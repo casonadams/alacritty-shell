@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
-WALH_SHELL=$(dirname "${(%):-%x}")
+ALACRITTY_SHELL=$(dirname "${(%):-%x}")
 
 [ -n "$PS1" ] \
-    && [ -s "${WALH_SHELL}/profile_helper.sh" ] \
-    && eval "$("${WALH_SHELL}/profile_helper.sh")"
+    && [ -s "${ALACRITTY_SHELL}/profile_helper.sh" ] \
+    && eval "$("${ALACRITTY_SHELL}/profile_helper.sh")"
