@@ -71,3 +71,5 @@ install [walh](https://github.com/casonadams/walh) colorscheme
 set notermguicolors
 colorscheme walh-eighties
 ```
+
+**Note** not tested on windows (probably won't work) open to MRs to support it though
