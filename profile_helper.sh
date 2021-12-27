@@ -7,7 +7,7 @@ cat << 'FUNC'
 _alacritty()
 {
   local theme="$1"
-  sed -i "" -e "s#^colors: \*.*#colors: *$theme#g" "${_ALACRITTY_YML}"
+  sed -i -e "s#^colors: \*.*#colors: *$theme#g" "${_ALACRITTY_YML}"
 }
 FUNC
 
