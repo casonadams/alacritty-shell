@@ -55,7 +55,7 @@ colors: *solarized_light
 ```
 
 [examples](https://github.com/aarowill/base16-alacritty/tree/master/colors)
-** Note use the `256` themes
+- **Note** use the `256` themes
 
 ## change terminal colors
 
