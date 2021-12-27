@@ -1,11 +1,9 @@
-#!/usr/bin/env zsh
-
-ALACRITTY_SHELL=$(dirname "${(%):-%x}")
+#!/usr/bin/env bash
 
 ALACRITTY_YML=${HOME}/.config/alacritty/alacritty.yml
 echo "export ALACRITTY_YML=${ALACRITTY_YML}"
 
-cat << 'FUNC'
+cat <<'FUNC'
 _alacritty()
 {
   local theme="$1"

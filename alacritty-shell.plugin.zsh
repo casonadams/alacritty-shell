@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-ALACRITTY_SHELL=$(dirname "${(%):-%x}")
+export ALACRITTY_SHELL=$(dirname "${(%):-%x}")
 
 YQ_VERSION="v4.16.2"
 YQ_URL="https://github.com/mikefarah/yq/releases/download"
@@ -10,12 +10,11 @@ if [ ! -f "${ALACRITTY_SHELL}/yq" ]; then
   local arch="$(uname -m)"
 
   if [[ $arch == "x86_64" ]]; then
-    curl -sSL "${YQ_URL}/${YQ_VERSION}/yq_${uname}_amd64" -o "$ALACRITTY_SHELL/yq"
+    curl -sSL "${YQ_URL}/${YQ_VERSION}/yq_${uname}_amd64" -o "${ALACRITTY_SHELL}/yq"
     chmod +x "${ALACRITTY_SHELL}/yq"
   else
     echo "$arch not supported"
   fi
-
 fi
 
 [ -n "$PS1" ] \
