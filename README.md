@@ -1,6 +1,6 @@
-# walh-shell
+# alacritty-shell
 
-zsh walh-shell plugin
+zsh alacritty-shell plugin
 
 ## example install with zinit
 
@@ -9,14 +9,14 @@ zinit wait lucid for \
   OMZL::key-bindings.zsh \
   OMZL::history.zsh \
   OMZP::git \
-  casonadams/walh-shell.zsh \
+  casonadams/alacritty-shell \
   ;
 ```
 
 ## manual install
 
 ```sh
-git clone https://github.com/casonadams/walh-shell.zsh.git ~/.config/walh-shell
+git clone https://github.com/casonadams/alacritty-shell.git ~/.config/alacritty-shell
 ```
 
 ### bash/zsh
@@ -24,24 +24,43 @@ git clone https://github.com/casonadams/walh-shell.zsh.git ~/.config/walh-shell
 Add following lines to ~/.bashrc or ~/.zshrc:
 
 ```sh
-WALH_SHELL="$HOME/.config/walh-shell/"
+ALACRITTY_SHELL="$HOME/.config/alacritty-shell/"
 [ -n "$PS1" ] && \
-    [ -s "$WALH_SHELL/profile_helper.sh" ] && \
-        eval "$("$WALH_SHELL/profile_helper.sh")"
+    [ -s "$ALACRITTY_SHELL/profile_helper.sh" ] && \
+        eval "$("$ALACRITTY/profile_helper.sh")"
 ```
 
 restart shell
 
+## setup alacritty themes
+
+```yml
+schemes:
+  solarized_light: &solarized_light
+    primary:
+      #...
+    normal:
+      #...
+    bright:
+      #...
+  solarized_dark: &solarized_dark
+    primary:
+      #...
+    normal:
+      #...
+    bright:
+      #...
+
+colors: *solarized_light
+```
+
+[examples](https://github.com/aarowill/base16-alacritty/tree/master/colors)
+** Note use the `256` themes
+
 ## change terminal colors
 
 ```sh
-# onedark theme
-walh_onedark
-```
-
-```sh
-# onelight theme
-walh_onelight
+alacritty_theme_name
 ```
 
 ## using with vim
