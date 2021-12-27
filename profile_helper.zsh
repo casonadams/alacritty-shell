@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 ALACRITTY_SHELL=$(dirname "${(%):-%x}")
+
 ALACRITTY_YML=${HOME}/.config/alacritty/alacritty.yml
 echo "export ALACRITTY_YML=${ALACRITTY_YML}"
 
