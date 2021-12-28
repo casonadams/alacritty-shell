@@ -24,7 +24,7 @@ FUNC
 cat << 'FUNC'
 _k9s() {
   local theme="$1"
-  local background foreground red green yellow blue magenta cyan brightblack orange black
+  local background foreground red green yellow blue magenta cyan brightblack brightwhite orange black
 
   mkdir -p "${HOME}/.config/k9s"
   cp "${_ALACRITTY_SHELL}/skin.yml" "${HOME}/.config/k9s/skin.yml"
@@ -40,6 +40,7 @@ _k9s() {
   magenta=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.normal.magenta" "${_ALACRITTY_YML}")
   cyan=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.normal.cyan" "${_ALACRITTY_YML}")
   brightblack=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.bright.black" "${_ALACRITTY_YML}")
+  brightwhite=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.bright.white" "${_ALACRITTY_YML}")
   orange=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.indexed_colors[0].color" "${_ALACRITTY_YML}")
   black=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.indexed_colors[2].color" "${_ALACRITTY_YML}")
 
@@ -52,6 +53,7 @@ _k9s() {
   sed -i -e "s#^magenta: .*#magenta: \&magenta \"\\$magenta\"#g" "${_K9S_YML}"
   sed -i -e "s#^cyan: .*#cyan: \&cyan \"\\$cyan\"#g" "${_K9S_YML}"
   sed -i -e "s#^brightblack: .*#brightblack: \&brightblack \"\\$brightblack\"#g" "${_K9S_YML}"
+  sed -i -e "s#^brightwhite: .*#brightwhite: \&brightwhite \"\\$brightwhite\"#g" "${_K9S_YML}"
   sed -i -e "s#^orange: .*#orange: \&orange \"\\$orange\"#g" "${_K9S_YML}"
   sed -i -e "s#^black: .*#black: \&black \"\\$black\"#g" "${_K9S_YML}"
 }

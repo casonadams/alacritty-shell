@@ -11,6 +11,7 @@ magenta: &magenta "default"
 cyan: &cyan "default"
 
 brightblack: &brightblack "default"
+brightwhite: &brightwhite "default"
 orange: &orange "default"
 
 # Skin
@@ -20,6 +21,8 @@ k9s:
     fgColor: *foreground
     bgColor: *transparent
     logoColor: *orange
+    logoColorMsg: *brightwhite
+    logoColorInfo: *green
     logoColorWarn: *magenta
     logoColorError: *red
 
