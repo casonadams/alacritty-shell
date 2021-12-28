@@ -55,12 +55,28 @@ colors: *solarized_light
 ```
 
 [examples](https://github.com/aarowill/base16-alacritty/tree/master/colors)
+
 - **Note** use the `256` themes
 
 ## change terminal colors
 
 ```sh
 alacritty_theme_name
+```
+
+## change k9s colors
+
+```sh
+k9s_theme_name
+```
+
+## change all apps colors
+
+- alacritty
+- k9s
+
+```sh
+all_theme_name
 ```
 
 ## using with vim
@@ -72,4 +88,5 @@ set notermguicolors
 colorscheme walh-gruvbox
 ```
 
-**Note** not tested on windows (probably won't work) open to MRs to support it though
+**Note** not tested on windows (probably won't work) open to MRs to support it
+though
