@@ -140,6 +140,7 @@ k9s:
         fgColor: *red
         bgColor: *transparent
 
+  # Dialog styles
   dialog:
     fgColor: *yellow
     bgColor: *transparent
