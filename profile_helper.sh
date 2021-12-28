@@ -24,37 +24,26 @@ FUNC
 cat << 'FUNC'
 _k9s() {
   local theme="$1"
-  local background foreground red green yellow blue magenta cyan brightblack brightwhite orange black
+  local yq background foreground red green yellow blue magenta cyan brightblack brightwhite orange black
 
   mkdir -p "${HOME}/.config/k9s"
   cp "${_ALACRITTY_SHELL}/skin.yml" "${_K9S_YML}"
 
+  yq="${_ALACRITTY_SHELL}/yq"
 
-  background=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.primary.background" "${_ALACRITTY_YML}")
-  foreground=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.primary.foreground" "${_ALACRITTY_YML}")
-  red=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.normal.red" "${_ALACRITTY_YML}")
-  green=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.normal.green" "${_ALACRITTY_YML}")
-  yellow=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.normal.yellow" "${_ALACRITTY_YML}")
-  blue=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.normal.blue" "${_ALACRITTY_YML}")
-  magenta=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.normal.magenta" "${_ALACRITTY_YML}")
-  cyan=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.normal.cyan" "${_ALACRITTY_YML}")
-  brightblack=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.bright.black" "${_ALACRITTY_YML}")
-  brightwhite=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.bright.white" "${_ALACRITTY_YML}")
-  orange=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.indexed_colors[0].color" "${_ALACRITTY_YML}")
-  black=$("${_ALACRITTY_SHELL}/yq" e ".schemes.$theme.indexed_colors[2].color" "${_ALACRITTY_YML}")
-
-  sed -i'' -e "s/^background: .*/background: \&background \"$background\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^foreground: .*/foreground: \&foreground \"$foreground\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^red: .*/red: \&red \"$red\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^green: .*/green: \&green \"$green\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^yellow: .*/yellow: \&yellow \"$yellow\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^blue: .*/blue: \&blue \"$blue\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^magenta: .*/magenta: \&magenta \"$magenta\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^cyan: .*/cyan: \&cyan \"$cyan\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^brightblack: .*/brightblack: \&brightblack \"$brightblack\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^brightwhite: .*/brightwhite: \&brightwhite \"$brightwhite\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^orange: .*/orange: \&orange \"$orange\"/g" "${_K9S_YML}"
-  sed -i'' -e "s/^black: .*/black: \&black \"$black\"/g" "${_K9S_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).background  = select(fileIndex==1).schemes.$theme.primary.background      | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).foreground  = select(fileIndex==1).schemes.$theme.primary.foreground      | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).red         = select(fileIndex==1).schemes.$theme.normal.red              | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).green       = select(fileIndex==1).schemes.$theme.normal.green            | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).yellow      = select(fileIndex==1).schemes.$theme.normal.yellow           | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).blue        = select(fileIndex==1).schemes.$theme.normal.blue             | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).magenta     = select(fileIndex==1).schemes.$theme.normal.magenta          | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).cyan        = select(fileIndex==1).schemes.$theme.normal.cyan             | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).cyan        = select(fileIndex==1).schemes.$theme.normal.cyan             | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).brightblack = select(fileIndex==1).schemes.$theme.bright.black            | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).brightwhite = select(fileIndex==1).schemes.$theme.bright.white            | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).orange      = select(fileIndex==1).schemes.$theme.indexed_colors[0].color | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).black       = select(fileIndex==1).schemes.$theme.indexed_colors[2].color | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
 
   sed -i'' -e 's/0x/#/g' "${_K9S_YML}"
   sed -i'' -e 's/null/default/g' "${_K9S_YML}"
