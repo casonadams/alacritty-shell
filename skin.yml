@@ -1,0 +1,148 @@
+# Style
+
+background: &background "#1d1f21"
+foreground: &foreground "#c5c8c6"
+
+red: &red "#cc6666"
+green: &green "#b5bd68"
+yellow: &yellow "#f0c674"
+blue: &blue "#81a2be"
+magenta: &magenta "#b294bb"
+cyan: &cyan "#8abeb7"
+
+brightblack: &brightblack "#969896"
+orange: &orange "#de935f"
+
+# Skin
+k9s:
+  # General K9s styles
+  body:
+    fgColor: *foreground
+    bgColor: *background
+    logoColor: *orange
+    logoColorWarn: *magenta
+    logoColorError: *red
+
+  # Command prompt styles
+  prompt:
+    fgColor: *foreground
+    bgColor: *background
+    suggestColor: *green
+
+  # help styles
+  help:
+    fgColor: *foreground
+    bgColor: *background
+    sectionColor: *yellow
+    keyColor: *green
+    numKeyColor: *background
+
+  # Frame styles
+  frame:
+    # Border title styles.
+    title:
+      fgColor: *yellow
+      bgColor: *background
+      highlightColor: *cyan
+      counterColor: *foreground
+      filterColor: *brightblack
+
+    # Borders styles
+    border:
+      fgColor: *yellow
+      focusColor: *foreground
+
+    # MenuView attributes and styles
+    menu:
+      fgColor: *yellow
+      keyColor: *yellow
+      numKeyColor: *foreground
+
+    # CrumbView attributes for history navigation.
+    crumbs:
+      fgColor: *background
+      bgColor: *blue
+      activeColor: *cyan
+
+    # Resource status and update styles
+    status:
+      # Text display, highlight is same colors inverted
+      newColor: *blue
+      modifyColor: *magenta
+      addColor: *yellow
+      pendingColor: *orange
+      errorColor: *red
+      highlightColor: *cyan
+      killColor: *red
+      completedColor: *brightblack
+
+  # ClusterInfoView styles
+  info:
+    sectionColor: *foreground
+    fgColor: *yellow
+
+  # Specific views styles
+  views:
+    # TableView attributes.
+    table:
+      fgColor: *foreground
+      bgColor: *background
+      cursorFgColor: *background
+      cursorBgColor: *foreground
+      markColor: *green
+      # Header row styles.
+      header:
+        fgColor: *yellow
+        bgColor: *background
+        sorterColor: *orange
+
+    # Xray style
+    xray:
+      fgColor: *foreground
+      bgColor: *background
+      cursorColor: *red
+      cursorTextColor: *foreground
+      graphicColor: *yellow
+
+    # Chart drawing
+    charts:
+      bgColor: *background
+      dialBgColor: *background
+      chartBgColor: *background
+      defaultDialColors:
+        - *foreground
+        - *red
+      defaultChartColors:
+        - *foreground
+        - *red
+      resourceColors:
+        cpu:
+          - *cyan
+          - *red
+        mem:
+          - *yellow
+          - *orange
+
+    # YAML info styles.
+    yaml:
+      keyColor: *yellow
+      valueColor: *cyan
+      colonColor: *yellow
+
+    # Logs styles.
+    logs:
+      fgColor: *yellow
+      bgColor: *background
+      indicator:
+        fgColor: *red
+        bgColor: *background
+
+  dialog:
+    fgColor: *yellow
+    bgColor: *background
+    buttonFgColor: *yellow
+    buttonBgColor: *background
+    buttonFocusFgColor: *brightblack
+    buttonFocusBgColor: *foreground
+    labelFgColor: *brightblack
+    fieldFgColor: *foreground
