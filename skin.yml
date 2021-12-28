@@ -1,24 +1,24 @@
 # Style
+transparent: &transparent "default"
+background: &background "default"
+foreground: &foreground "default"
 
-background: &background "#1d1f21"
-foreground: &foreground "#c5c8c6"
+red: &red "default"
+green: &green "default"
+yellow: &yellow "default"
+blue: &blue "default"
+magenta: &magenta "default"
+cyan: &cyan "default"
 
-red: &red "#cc6666"
-green: &green "#b5bd68"
-yellow: &yellow "#f0c674"
-blue: &blue "#81a2be"
-magenta: &magenta "#b294bb"
-cyan: &cyan "#8abeb7"
-
-brightblack: &brightblack "#969896"
-orange: &orange "#de935f"
+brightblack: &brightblack "default"
+orange: &orange "default"
 
 # Skin
 k9s:
   # General K9s styles
   body:
     fgColor: *foreground
-    bgColor: *background
+    bgColor: *transparent
     logoColor: *orange
     logoColorWarn: *magenta
     logoColorError: *red
@@ -26,23 +26,23 @@ k9s:
   # Command prompt styles
   prompt:
     fgColor: *foreground
-    bgColor: *background
+    bgColor: *transparent
     suggestColor: *green
 
   # help styles
   help:
     fgColor: *foreground
-    bgColor: *background
+    bgColor: *transparent
     sectionColor: *yellow
     keyColor: *green
-    numKeyColor: *background
+    numKeyColor: *transparent
 
   # Frame styles
   frame:
     # Border title styles.
     title:
       fgColor: *yellow
-      bgColor: *background
+      bgColor: *transparent
       highlightColor: *cyan
       counterColor: *foreground
       filterColor: *brightblack
@@ -86,29 +86,29 @@ k9s:
     # TableView attributes.
     table:
       fgColor: *foreground
-      bgColor: *background
+      bgColor: *transparent
       cursorFgColor: *background
       cursorBgColor: *foreground
       markColor: *green
       # Header row styles.
       header:
         fgColor: *yellow
-        bgColor: *background
+        bgColor: *transparent
         sorterColor: *orange
 
     # Xray style
     xray:
       fgColor: *foreground
-      bgColor: *background
+      bgColor: *transparent
       cursorColor: *red
       cursorTextColor: *foreground
       graphicColor: *yellow
 
     # Chart drawing
     charts:
-      bgColor: *background
-      dialBgColor: *background
-      chartBgColor: *background
+      bgColor: *transparent
+      dialBgColor: *transparent
+      chartBgColor: *transparent
       defaultDialColors:
         - *foreground
         - *red
@@ -132,16 +132,16 @@ k9s:
     # Logs styles.
     logs:
       fgColor: *yellow
-      bgColor: *background
+      bgColor: *transparent
       indicator:
         fgColor: *red
-        bgColor: *background
+        bgColor: *transparent
 
   dialog:
     fgColor: *yellow
-    bgColor: *background
+    bgColor: *transparent
     buttonFgColor: *yellow
-    buttonBgColor: *background
+    buttonBgColor: *transparent
     buttonFocusFgColor: *brightblack
     buttonFocusBgColor: *foreground
     labelFgColor: *brightblack
