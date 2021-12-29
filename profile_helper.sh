@@ -2,15 +2,15 @@
 
 os="$(uname -s)"
 
-_ALACRITTY_YML=${HOME}/.config/alacritty/alacritty.yml
+_ALACRITTY_YML="${HOME}/.config/alacritty/alacritty.yml"
 echo "export _ALACRITTY_YML=${_ALACRITTY_YML}"
 
 if [ -n "${XDG_CONFIG_HOME+x}" ]; then
-  _K9S_YML=${XDG_CONFIG_HOME}/k9s/skin.yml
+  _K9S_YML="${XDG_CONFIG_HOME}/k9s/skin.yml"
 elif [ "${os}" == "Darwin" ]; then
-  _K9S_YML=${HOME}/Library/Preferences/k9s/skin.yml
+  _K9S_YML="${HOME}/Library/Application Support/k9s/skin.yml"
 else
-  _K9S_YML=${HOME}/.config/k9s/skin.yml
+  _K9S_YML="${HOME}/.config/k9s/skin.yml"
 fi
 
 echo "export _K9S_YML=${_K9S_YML}"
