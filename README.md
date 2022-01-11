@@ -36,7 +36,10 @@ restart shell
 
 [Alacritty color-schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
 
-<twilight>
+<details>
+<summary>twilight</summary>
+<p>
+
 ```yml
 schemes:
   twilight: &twilight
@@ -66,9 +69,14 @@ schemes:
       - { index: 247, color: "0x212121" }
 colors: *twilight
 ```
-</twilight>
 
-<tokyo-night-storm>
+</p>
+</details>
+
+<details>
+<summary>tokyo-night-storm</summary>
+<p>
+
 ```yml
 schemes:
   tokyo-night-storm: &tokyo-night-storm
@@ -98,9 +106,14 @@ schemes:
       - { index: 247, color: "0x282d42" }
 colors: *tokyo-night-storm
 ```
-</tokyo-night-storm>
 
-<tokyo-night>
+</p>
+</details>
+
+<details>
+<summary>tokyo-night</summary>
+<p>
+
 ```yml
 schemes:
   tokyo-night: &tokyo-night
@@ -130,9 +143,14 @@ schemes:
       - { index: 247, color: "0x232433" }
 colors: *tokyo-night
 ```
-</tokyo-night>
 
-<code-dark>
+</p>
+</details>
+
+<details>
+<summary>code-dark</summary>
+<p>
+
 ```yml
 schemes:
   code-dark: &code-dark
@@ -162,9 +180,14 @@ schemes:
       - { index: 247, color: "0x2b2b2b" }
 colors: *code-dark
 ```
-</code-dark>
 
-<ocean-next>
+</p>
+</details>
+
+<details>
+<summary>ocean-next</summary>
+<p>
+
 ```yml
 schemes:
   ocean-next: &ocean-next
@@ -197,9 +220,14 @@ schemes:
       - { index: 247, color: "0x343d46" }
 colors: *ocean-next
 ```
-</ocean-next>
 
-<ocean>
+</p>
+</details>
+
+<details>
+<summary>ocean</summary>
+<p>
+
 ```yml
 schemes:
   ocean: &ocean
@@ -232,9 +260,14 @@ schemes:
       - { index: 247, color: "0x343d46" }
 colors: *ocean
 ```
-</ocean>
 
-<axual-dark>
+</p>
+</details>
+
+<details>
+<summary>axual-dark</summary>
+<p>
+
 ```yml
 schemes:
   axual-dark: &axual-dark
@@ -267,9 +300,14 @@ schemes:
       - { index: 247, color: "0x13415e" }
 colors: *axual-dark
 ```
-</axual-dark>
 
-<tommorrow-dark>
+</p>
+</details>
+
+<details>
+<summary>tommorrow-dark</summary>
+<p>
+
 ```yml
 schemes:
   tomorrow-dark: &tomorrow-dark
@@ -302,9 +340,14 @@ schemes:
       - { index: 247, color: "0x282a2e" }
 colors: *tomorrow-dark
 ```
-</tomorrow-dark>
 
-<tommorrow>
+</p>
+</details>
+
+<details>
+<summary>tommorrow</summary>
+<p>
+
 ```yml
 schemes:
   tomorrow: &tomorrow
@@ -337,9 +380,14 @@ schemes:
       - { index: 247, color: "0xf2f2f2" }
 colors: *tomorrow
 ```
-</tomorrow>
 
-<gruvbox-dark>
+</p>
+</details>
+
+<details>
+<summary>gruvbox-dark</summary>
+<p>
+
 ```yml
 schemes:
   gruvbox-dark: &gruvbox-dark
@@ -372,9 +420,14 @@ schemes:
       - { index: 247, color: "0x3c3836" }
 colors: *gruvbox-dark
 ```
-</gruvbox-dark>
 
-<nord>
+</p>
+</details>
+
+<details>
+<summary>nord</summary>
+<p>
+
 ```yml
 schemes:
   nord: &nord
@@ -407,9 +460,14 @@ schemes:
       - { index: 247, color: "0x3b4252" }
 colors: *nord
 ```
-</nord>
 
-<one-dark>
+</p>
+</details>
+
+<details>
+<summary>one-dark</summary>
+<p>
+
 ```yml
 schemes:
   one-dark: &one-dark
@@ -442,9 +500,14 @@ schemes:
       - { index: 247, color: "0x353b45" }
 colors: *one-dark
 ```
-</one-dark>
 
-<one-light>
+</p>
+</details>
+
+<details>
+<summary>one-light</summary>
+<p>
+
 ```yml
 schemes:
   one-light: &one-light
@@ -477,7 +540,9 @@ schemes:
       - { index: 247, color: "0xf0f0f1" }
 colors: *one-light
 ```
-</one-light>
+
+</p>
+</details>
 
 [examples](https://github.com/aarowill/base16-alacritty/tree/master/colors)
 
