@@ -35,6 +35,7 @@ restart shell
 ## setup alacritty themes
 
 [Alacritty color-schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
+desribes how to use multiple schemes.
 
 <details>
 <summary>twilight</summary>
