@@ -52,7 +52,7 @@ _k9s() {
   "$yq" -i eval-all "select(fileIndex==0).brightblack = select(fileIndex==1).schemes.$theme.bright.black            | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
   "$yq" -i eval-all "select(fileIndex==0).brightwhite = select(fileIndex==1).schemes.$theme.bright.white            | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
   "$yq" -i eval-all "select(fileIndex==0).orange      = select(fileIndex==1).schemes.$theme.indexed_colors[0].color | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
-  "$yq" -i eval-all "select(fileIndex==0).black       = select(fileIndex==1).schemes.$theme.indexed_colors[2].color | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
+  "$yq" -i eval-all "select(fileIndex==0).black       = select(fileIndex==1).schemes.$theme.indexed_colors[1].color | select(fileIndex==0)" "${_K9S_YML}" "${_ALACRITTY_YML}"
 
   sed -i'' -e 's/0x/#/g' "${_K9S_YML}"
   sed -i'' -e 's/null/default/g' "${_K9S_YML}"
