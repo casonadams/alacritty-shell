@@ -48,7 +48,6 @@ _k9s() {
   "$yq" -i eval-all "select(fileIndex==0).blue        = select(fileIndex==1).schemes.$theme.normal.blue             | select(fileIndex==0)" "${_K9s_CONFIG}/skin.yml" "${_ALACRITTY_YML}"
   "$yq" -i eval-all "select(fileIndex==0).magenta     = select(fileIndex==1).schemes.$theme.normal.magenta          | select(fileIndex==0)" "${_K9s_CONFIG}/skin.yml" "${_ALACRITTY_YML}"
   "$yq" -i eval-all "select(fileIndex==0).cyan        = select(fileIndex==1).schemes.$theme.normal.cyan             | select(fileIndex==0)" "${_K9s_CONFIG}/skin.yml" "${_ALACRITTY_YML}"
-  "$yq" -i eval-all "select(fileIndex==0).cyan        = select(fileIndex==1).schemes.$theme.normal.cyan             | select(fileIndex==0)" "${_K9s_CONFIG}/skin.yml" "${_ALACRITTY_YML}"
   "$yq" -i eval-all "select(fileIndex==0).brightblack = select(fileIndex==1).schemes.$theme.bright.black            | select(fileIndex==0)" "${_K9s_CONFIG}/skin.yml" "${_ALACRITTY_YML}"
   "$yq" -i eval-all "select(fileIndex==0).brightwhite = select(fileIndex==1).schemes.$theme.bright.white            | select(fileIndex==0)" "${_K9s_CONFIG}/skin.yml" "${_ALACRITTY_YML}"
   "$yq" -i eval-all "select(fileIndex==0).orange      = select(fileIndex==1).schemes.$theme.indexed_colors[0].color | select(fileIndex==0)" "${_K9s_CONFIG}/skin.yml" "${_ALACRITTY_YML}"
