@@ -10,7 +10,7 @@ if [ ! -f "${_ALACRITTY_SHELL}/yq" ]; then
   local arch="$(uname -m)"
 
   if [[ $arch == "x86_64" ]]; then
-    curl -sSL "${YQ_URL}/${YQ_VERSION}/yq_${uname}_amd64" -o "${_ALACRITTY_SHELL}/yq"
+    curl -SL "${YQ_URL}/${YQ_VERSION}/yq_${uname}_amd64" -o "${_ALACRITTY_SHELL}/yq"
     chmod +x "${_ALACRITTY_SHELL}/yq"
   else
     echo "$arch not supported"
