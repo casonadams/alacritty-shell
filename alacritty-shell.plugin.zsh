@@ -20,4 +20,3 @@ fi
 [ -n "$PS1" ] \
   && [ -s "${_ALACRITTY_SHELL}/profile_helper.sh" ] \
   && eval "$("${_ALACRITTY_SHELL}/profile_helper.sh")"
-
