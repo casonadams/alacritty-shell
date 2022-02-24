@@ -38,6 +38,42 @@ restart shell
 desribes how to use multiple schemes.
 
 <details>
+<summary>iterm</summary>
+<p>
+
+```yml
+schemes:
+  iterm: &iterm
+    primary:
+      background: "0x101421"
+      foreground: "0xfffbf6"
+    bright:
+      black: "0x2e2e2e"
+      red: "0xeb4129"
+      green: "0xabe047"
+      yellow: "0xf6c744"
+      blue: "0x47a0f3"
+      magenta: "0x7b5cb0"
+      cyan: "0x64dbed"
+      white: "0xe5e9f0"
+    normal:
+      black: "0x565656"
+      red: "0xec5357"
+      green: "0xc0e17d"
+      yellow: "0xf9da6a"
+      blue: "0x49a4f8"
+      magenta: "0xa47de9"
+      cyan: "0x99faf2"
+      white: "0xffffff"
+    indexed_colors:
+      - { index: 208, color: "0xF18437" }
+      - { index: 247, color: "0x191f34" }
+```
+
+</p>
+</details>
+
+<details>
 <summary>twilight</summary>
 <p>
 
