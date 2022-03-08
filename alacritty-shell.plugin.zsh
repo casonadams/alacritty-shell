@@ -14,6 +14,7 @@ if [ ! -f "${_ALACRITTY_SHELL}/yq" ]; then
     chmod +x "${_ALACRITTY_SHELL}/yq"
   else
     echo "$arch not supported"
+    return 1
   fi
 fi
 
