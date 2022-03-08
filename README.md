@@ -10,6 +10,7 @@ zinit wait lucid for \
   OMZL::history.zsh \
   OMZP::git \
   casonadams/alacritty-shell \
+  casonadams/skim.zsh \
   ;
 ```
 
