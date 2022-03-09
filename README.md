@@ -2,6 +2,12 @@
 
 zsh alacritty-shell plugin
 
+alacritty-shell is a dynamic theme chooser based on the `alacritty.yml`
+`schemes:` setttings
+
+Themes need to be defined for this pluging to work correctly see:
+[Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
+
 ## example install with zinit
 
 ```zsh
