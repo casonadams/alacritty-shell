@@ -14,6 +14,10 @@ zinit wait lucid for \
   ;
 ```
 
+**NOTE** recommended to install `yq` manually see manual install / `yq`
+section for more information.  Other wise an attempt will be made to
+auto install the `yq` binary.  Not supported for all platforms
+
 ## manual install
 
 ### yq
