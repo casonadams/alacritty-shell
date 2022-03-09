@@ -23,7 +23,16 @@ auto install the `yq` binary.  Not supported for all platforms
 ### yq
 
 [yq](https://github.com/mikefarah/yq/releases) is used to parse the
-alacritty.yml file and needs to be installed in the $PATH.
+alacritty.yml file and needs to be installed in the `$PATH`.
+
+#### example install command for x86_64 linux
+
+**NOTE** `~/.local/bin/` needs to be in the `$PATH`
+
+```sh
+curl -L https://github.com/mikefarah/yq/releases/download/v4.21.1/yq_linux_amd64 -o ~/.local/bin/yq
+chmod +x ~/.local/bin/yq
+```
 
 ### bash/zsh
 
