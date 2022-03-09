@@ -16,6 +16,11 @@ zinit wait lucid for \
 
 ## manual install
 
+### yq
+
+[yq](https://github.com/mikefarah/yq/releases) is used to parse the
+alacritty.yml file and needs to be installed in the $PATH.
+
 ### bash/zsh
 
 Add following lines to ~/.bashrc or ~/.zshrc:
@@ -50,21 +55,6 @@ desribes how to use multiple schemes.
 
 ```sh
 alacritty_theme_name
-```
-
-## change k9s colors
-
-```sh
-k9s_theme_name
-```
-
-## change all apps colors
-
-- alacritty
-- k9s
-
-```sh
-all_theme_name
 ```
 
 ## using with vim
