@@ -40,6 +40,10 @@ curl -L https://github.com/mikefarah/yq/releases/download/v4.21.1/yq_linux_amd64
 chmod +x ~/.local/bin/yq
 ```
 
+#### on OSX
+ ```
+ brew install yq
+ ```
 ### bash/zsh
 
 Add following lines to ~/.bashrc or ~/.zshrc:
