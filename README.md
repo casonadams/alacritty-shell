@@ -68,16 +68,11 @@ restart shell
 ## setup alacritty themes
 
 [Alacritty color-schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
-desribes how to use multiple schemes.
+describes how to use multiple schemes.
 
 [Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
 
-[other examples](https://github.com/aarowill/base16-alacritty/tree/master/colors)
-
-- **Note** use the `256` themes
-- add `index: 208` = `orange`
-- add `index: 247` = `highlight` dark is +5 lightness, and light is -5 lightness
-  to the background color
+ **Note** add `index: 208` = `orange`
 
 ## change terminal colors
 
