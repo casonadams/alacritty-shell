@@ -8,45 +8,31 @@ alacritty-shell is a dynamic theme chooser based on the `alacritty.yml`
 Themes need to be defined for this plugin to work correctly see:
 [Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
 
-## example install with zinit
+## zinit
 
 ```zsh
 zinit wait lucid for \
-  OMZL::key-bindings.zsh \
-  OMZL::history.zsh \
-  OMZP::git \
   casonadams/alacritty-shell \
-  casonadams/skim.zsh \
   ;
 ```
 
-**NOTE** recommended to install `yq` manually see manual install / `yq` section
-for more information. Other wise an attempt will be made to auto install the
-`yq` binary. Not supported for all platforms
+## oh-my-zsh
+
+### download repo to zsh custom plugins
+
+```sh
+ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/" git clone --depth=1 "https://github.com/casonadams/alacritty-shell.git" "${ZSH_CUSTOM}/plugins/alacritty-shell"
+```
+
+### add plugin to `~/.zshrc`
+
+```zsh
+plugins+=(
+  alacritty-shell
+)
+```
 
 ## manual install
-
-### yq
-
-#### OSX
-
-```sh
-brew install yq
-```
-
-#### Linux / Other
-
-[yq](https://github.com/mikefarah/yq/releases) is used to parse the
-alacritty.yml file and needs to be installed in the `$PATH`.
-
-#### example install command for x86_64 linux
-
-**NOTE** `~/.local/bin/` needs to be in the `$PATH`
-
-```sh
-curl -L https://github.com/mikefarah/yq/releases/download/v4.21.1/yq_linux_amd64 -o ~/.local/bin/yq
-chmod +x ~/.local/bin/yq
-```
 
 ### plugin bash/zsh
 
@@ -54,16 +40,16 @@ Add following lines to ~/.bashrc or ~/.zshrc:
 
 ```sh
 if [ ! -d "${HOME}/.config/alacritty-shell" ]; then
-  git clone https://github.com/casonadams/alacritty-shell.git ~/.config/alacritty-shell
+  git clone https://github.com/casonadams/alacritty-shell.git ~/.alacritty-shell
 fi
 
-ALACRITTY_SHELL="${HOME}/.config/alacritty-shell"
+ALACRITTY_SHELL="${HOME}/.alacritty-shell"
 [ -n "$PS1" ] \
   && [ -s "${ALACRITTY_SHELL}/profile_helper.sh" ] \
   && eval "$("${ALACRITTY_SHELL}/profile_helper.sh")"
 ```
 
-restart shell
+- **NOTE** restart shell
 
 ## setup alacritty themes
 
