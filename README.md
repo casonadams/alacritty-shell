@@ -8,7 +8,18 @@ alacritty-shell is a dynamic theme chooser based on the `alacritty.yml`
 Themes need to be defined for this plugin to work correctly see:
 [Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
 
-## zinit
+## setup alacritty themes
+
+[Alacritty color-schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
+describes how to use multiple schemes.
+
+[Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
+
+ **Note** add `index: 208` = `orange`
+
+## install
+
+### zinit
 
 ```zsh
 zinit wait lucid for \
@@ -16,15 +27,15 @@ zinit wait lucid for \
   ;
 ```
 
-## oh-my-zsh
+### oh-my-zsh
 
-### download repo to zsh custom plugins
+#### download repo to zsh custom plugins
 
 ```sh
 ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/" git clone --depth=1 "https://github.com/casonadams/alacritty-shell.git" "${ZSH_CUSTOM}/plugins/alacritty-shell"
 ```
 
-### add plugin to `~/.zshrc`
+#### add plugin to `~/.zshrc`
 
 ```zsh
 plugins+=(
@@ -32,9 +43,7 @@ plugins+=(
 )
 ```
 
-## manual install
-
-### plugin bash/zsh
+### manual
 
 Add following lines to ~/.bashrc or ~/.zshrc:
 
@@ -49,18 +58,9 @@ ALACRITTY_SHELL="${HOME}/.alacritty-shell"
   && eval "$("${ALACRITTY_SHELL}/profile_helper.sh")"
 ```
 
-- **NOTE** restart shell
-
-## setup alacritty themes
-
-[Alacritty color-schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
-describes how to use multiple schemes.
-
-[Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
-
- **Note** add `index: 208` = `orange`
-
 ## change terminal colors
+
+- **NOTE** restart shell
 
 ```sh
 alacritty_theme_name
