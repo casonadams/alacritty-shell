@@ -45,11 +45,11 @@ plugins+=(
 
 ### manual
 
-Add following lines to ~/.bashrc or ~/.zshrc:
+Add following lines to `.bashrc` or `.zshrc`:
 
 ```sh
 if [ ! -d "${HOME}/.config/alacritty-shell" ]; then
-  git clone https://github.com/casonadams/alacritty-shell.git ~/.alacritty-shell
+  git clone https://github.com/casonadams/alacritty-shell.git "${HOME}/.alacritty-shell"
 fi
 
 ALACRITTY_SHELL="${HOME}/.alacritty-shell"
@@ -60,7 +60,7 @@ ALACRITTY_SHELL="${HOME}/.alacritty-shell"
 
 ## change terminal colors
 
-- **NOTE** restart shell
+**NOTE** restart shell
 
 ```sh
 alacritty_theme_name
