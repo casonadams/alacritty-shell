@@ -48,7 +48,7 @@ plugins+=(
 Add following lines to `.bashrc` or `.zshrc`:
 
 ```sh
-if [ ! -d "${HOME}/.config/alacritty-shell" ]; then
+if [ ! -d "${HOME}/.alacritty-shell" ]; then
   git clone https://github.com/casonadams/alacritty-shell.git "${HOME}/.alacritty-shell"
 fi
 
