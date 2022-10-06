@@ -1,0 +1,25 @@
+schemes:
+  github-dark: &github-dark
+    primary:
+      background: "0x101216"
+      foreground: "0x8b949e"
+    normal:
+      black: "0x1a1d23"
+      red: "0xf78166"
+      green: "0x56d364"
+      yellow: "0xe3b341"
+      blue: "0x6ca4f8"
+      magenta: "0xdb61a2"
+      cyan: "0x2b7489"
+      white: "0x8b949e"
+    bright:
+      black: "0x4d4d4d"
+      red: "0xf78166"
+      green: "0x56d364"
+      yellow: "0xe3b341"
+      blue: "0x6ca4f8"
+      magenta: "0xdb61a2"
+      cyan: "0x2b7489"
+      white: "0xc5c9cf"
+    indexed_colors:
+      - {index: 208, color: "0xed9a54"}

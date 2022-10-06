@@ -1,0 +1,25 @@
+schemes:
+  code-dark: &code-dark
+    primary:
+      background: "0x1e1e1e"
+      foreground: "0xc6c6c6"
+    normal:
+      black: "0x383838"
+      red: "0xdf1426"
+      green: "0x00c073"
+      yellow: "0xe4e700"
+      blue: "0x0072cf"
+      magenta: "0xcc2bc2"
+      cyan: "0x00aad1"
+      white: "0xe5e5e5"
+    bright:
+      black: "0x666666"
+      red: "0xdf1426"
+      green: "0x00c073"
+      yellow: "0xe4e700"
+      blue: "0x0072cf"
+      magenta: "0xcc2bc2"
+      cyan: "0x00aad1"
+      white: "0xe0e0e0"
+    indexed_colors:
+      - { index: 208, color: "0xDF6526" }

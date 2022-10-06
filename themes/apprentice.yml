@@ -1,0 +1,25 @@
+schemes:
+  apprentice: &apprentice
+    primary:
+      background: "0x262626"
+      foreground: "0xBCBCBC"
+    normal:
+      black: "0x333333"
+      red: "0xAF5F5F"
+      green: "0x5F875F"
+      yellow: "0x87875F"
+      blue: "0x5F87AF"
+      magenta: "0x5F5F87"
+      cyan: "0x5F8787"
+      white: "0xBCBCBC"
+    bright:
+      black: "0x515151"
+      red: "0xAF5F5F"
+      green: "0x5F875F"
+      yellow: "0x87875F"
+      blue: "0x5F87AF"
+      magenta: "0x5F5F87"
+      cyan: "0x5F8787"
+      white: "0xFFFFFF"
+    indexed_colors:
+      - {index: 208, color: "0x9b735f"}

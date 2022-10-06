@@ -1,0 +1,25 @@
+schemes:
+  axual-dark: &axual-dark
+    primary:
+      background: "0x113851"
+      foreground: "0xd8d7cd"
+    normal:
+      black: "0x13415e"
+      red: "0xD7595F"
+      green: "0xb5bd68"
+      yellow: "0xF2BF40"
+      blue: "0x81a2be"
+      magenta: "0xb294bb"
+      cyan: "0x47B0AB"
+      white: "0xd8d7cd"
+    bright:
+      black: "0xA99688"
+      red: "0xD7595F"
+      green: "0xb5bd68"
+      yellow: "0xF2BF40"
+      blue: "0x81a2be"
+      magenta: "0xb294bb"
+      cyan: "0x47B0AB"
+      white: "0xecebe6"
+    indexed_colors:
+      - {index: 208, color: "0xe58c4f"}

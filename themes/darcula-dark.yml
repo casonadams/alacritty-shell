@@ -1,0 +1,25 @@
+schemes:
+  darcula-dark: &darcula-dark
+    primary:
+      background: "0x282828"
+      foreground: "0xA9B7C6"
+    normal:
+      black: "0x3C3F41"
+      red: "0xBC3F3C"
+      green: "0xA5C261"
+      yellow: "0xFFC66D"
+      blue: "0x6897BB"
+      magenta: "0x9876AA"
+      cyan: "0x89C0BE"
+      white: "0xBABABA"
+    bright:
+      black: "0x808080"
+      red: "0xBC3F3C"
+      green: "0xA5C261"
+      yellow: "0xFFC66D"
+      blue: "0x6897BB"
+      magenta: "0x9876AA"
+      cyan: "0x89C0BE"
+      white: "0xF4F4FA"
+    indexed_colors:
+      - {index: 208, color: "0xCC7832"}

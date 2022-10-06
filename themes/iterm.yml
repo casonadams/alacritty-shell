@@ -1,0 +1,25 @@
+schemes:
+  iterm: &iterm
+    primary:
+      background: "0x101421"
+      foreground: "0xfffbf6"
+    normal:
+      black: "0x161b2d"
+      red: "0xeb4129"
+      green: "0xabe047"
+      yellow: "0xf6c744"
+      blue: "0x47a0f3"
+      magenta: "0x7b5cb0"
+      cyan: "0x64dbed"
+      white: "0xfffbf6"
+    bright:
+      black: "0x88888c"
+      red: "0xeb4129"
+      green: "0xabe047"
+      yellow: "0xf6c744"
+      blue: "0x47a0f3"
+      magenta: "0x7b5cb0"
+      cyan: "0x64dbed"
+      white: "0xffffff"
+    indexed_colors:
+      - {index: 208, color: "0xf18437"}

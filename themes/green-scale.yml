@@ -1,0 +1,25 @@
+schemes:
+  green-scale: &green-scale
+    primary:
+      background: "0x081d08"
+      foreground: "0x4aa23c"
+    normal:
+      black: "0x0f2a0e"
+      red: "0x2f6c1c"
+      green: "0x50ad32"
+      yellow: "0x58bd38"
+      blue: "0x46992c"
+      magenta: "0x317029"
+      cyan: "0x50ad32"
+      white: "0x45972b"
+    bright:
+      black: "0x3a8124"
+      red: "0x2f6c1c"
+      green: "0x50ad32"
+      yellow: "0x58bd38"
+      blue: "0x46992c"
+      magenta: "0x317029"
+      cyan: "0x50ad32"
+      white: "0x6feb48"
+    indexed_colors:
+      - {index: 208, color: "0x31701e"}

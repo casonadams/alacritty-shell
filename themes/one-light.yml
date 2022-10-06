@@ -1,0 +1,25 @@
+schemes:
+  one-light: &one-light
+    primary:
+      background: "0xfafafa"
+      foreground: "0x383a42"
+    normal:
+      black: "0xededed"
+      red: "0xca1243"
+      green: "0x50a14f"
+      yellow: "0xc18401"
+      blue: "0x4078f2"
+      magenta: "0xa626a4"
+      cyan: "0x0184bc"
+      white: "0x383a42"
+    bright:
+      black: "0x999a9e"
+      red: "0xca1243"
+      green: "0x50a14f"
+      yellow: "0xc18401"
+      blue: "0x4078f2"
+      magenta: "0xa626a4"
+      cyan: "0x0184bc"
+      white: "0x090a0b"
+    indexed_colors:
+      - {index: 208, color: "0xc64b22"}

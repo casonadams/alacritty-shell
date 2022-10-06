@@ -1,0 +1,25 @@
+schemes:
+  tokyo-night-storm: &tokyo-night-storm
+    primary:
+      background: "0x24283b"
+      foreground: "0xa9b1d6"
+    normal:
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x9699a8"
+    bright:
+      black: "0x444b6a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0xacb0d0"
+    indexed_colors:
+      - {index: 208, color: "0xFF9E64"}
