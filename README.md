@@ -5,25 +5,41 @@ zsh alacritty-shell plugin
 alacritty-shell is a dynamic theme chooser based on the `alacritty.yml`
 `schemes:` setttings
 
-To create a custom theme see:
+## requirements
+
+### yq
+
+**NOTE** recommended to install `yq`
+
+`yq` is used to add builtin themes `add_theme_name`
+
+It isn't required if you choose to not use the `add_theme_name` command
+
+[install](https://github.com/mikefarah/yq#install)
+
+### custom alacritty themes
+
+[Alacritty color-schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
+describes how to use multiple schemes.
+
 [Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
 
-## zinit
+ **Note** add `index: 208` = `orange`
+
+## setup
+
+### zinit
 
 ```zsh
 zinit wait lucid for \
-  OMZL::key-bindings.zsh \
-  OMZL::history.zsh \
-  OMZP::git \
   casonadams/alacritty-shell \
-  casonadams/skim.zsh \
   ;
 ```
 
-## oh-my-zsh
+### oh-my-zsh
 
 ```sh
-git clone https://github.com/casonadams/alacritty-shell.git ~/.oh-my-zsh/custom/plugins/alacritty-shell
+ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/" git clone --depth=1 "https://github.com/casonadams/alacritty-shell.git" "${ZSH_CUSTOM}/plugins/alacritty-shell"
 ```
 
 ```zsh
@@ -34,75 +50,38 @@ plugins+=(
 )
 ```
 
-**NOTE** recommended to install `yq` manually see manual install / `yq` section
-for more information. Other wise an attempt will be made to auto install the
-`yq` binary. Not supported for all platforms
+### manual
 
-## manual install
-
-### yq
-
-#### OSX
+Add following lines to `.bashrc` or `.zshrc`:
 
 ```sh
-brew install yq
-```
-
-#### Linux / Other
-
-[yq](https://github.com/mikefarah/yq/releases) is used to parse the
-alacritty.yml file and needs to be installed in the `$PATH`.
-
-#### example install command for x86_64 linux
-
-**NOTE** `~/.local/bin/` needs to be in the `$PATH`
-
-```sh
-curl -L https://github.com/mikefarah/yq/releases/download/v4.21.1/yq_linux_amd64 -o ~/.local/bin/yq
-chmod +x ~/.local/bin/yq
-```
-
-### plugin bash/zsh
-
-Add following lines to ~/.bashrc or ~/.zshrc:
-
-```sh
-if [ ! -d "${HOME}/.config/alacritty-shell" ]; then
-  git clone https://github.com/casonadams/alacritty-shell.git ~/.config/alacritty-shell
+if [ ! -d "${HOME}/.alacritty-shell" ]; then
+  git clone https://github.com/casonadams/alacritty-shell.git "${HOME}/.alacritty-shell"
 fi
 
-ALACRITTY_SHELL="${HOME}/.config/alacritty-shell"
+ALACRITTY_SHELL="${HOME}/.alacritty-shell"
 [ -n "$PS1" ] \
   && [ -s "${ALACRITTY_SHELL}/profile_helper.sh" ] \
   && eval "$("${ALACRITTY_SHELL}/profile_helper.sh")"
 ```
 
-restart shell
+**NOTE** restart shell
 
-## setup alacritty themes
+## usage
 
-[Alacritty color-schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
-desribes how to use multiple schemes.
-
-[Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
-
-[other examples](https://github.com/aarowill/base16-alacritty/tree/master/colors)
-
-- add `index: 208` = `orange`
-
-## change terminal colors (tab complete)
+### change terminal colors (tab complete)
 
 ```sh
 alacritty_theme_name
 ```
 
-## add a builtin theme (tab complete)
+### add a builtin theme (tab complete)
 
 ```sh
 add_theme_name
 ```
 
-## using with vim
+### using with vim
 
 install [walh](https://github.com/casonadams/walh) colorscheme
 
