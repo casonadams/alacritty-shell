@@ -5,10 +5,10 @@ zsh alacritty-shell plugin
 alacritty-shell is a dynamic theme chooser based on the `alacritty.yml`
 `schemes:` setttings
 
-Themes need to be defined for this pluging to work correctly see:
+To create a custom theme see:
 [Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
 
-## example install with zinit
+## zinit
 
 ```zsh
 zinit wait lucid for \
@@ -18,6 +18,20 @@ zinit wait lucid for \
   casonadams/alacritty-shell \
   casonadams/skim.zsh \
   ;
+```
+
+## oh-my-zsh
+
+```sh
+git clone https://github.com/casonadams/alacritty-shell.git ~/.oh-my-zsh/custom/plugins/alacritty-shell
+```
+
+```zsh
+# ~/.zshrc
+
+plugins+=(
+  alacritty-shell
+)
 ```
 
 **NOTE** recommended to install `yq` manually see manual install / `yq` section
@@ -74,15 +88,18 @@ desribes how to use multiple schemes.
 
 [other examples](https://github.com/aarowill/base16-alacritty/tree/master/colors)
 
-- **Note** use the `256` themes
 - add `index: 208` = `orange`
-- add `index: 247` = `highlight` dark is +5 lightness, and light is -5 lightness
-  to the background color
 
-## change terminal colors
+## change terminal colors (tab complete)
 
 ```sh
 alacritty_theme_name
+```
+
+## add a builtin theme (tab complete)
+
+```sh
+add_theme_name
 ```
 
 ## using with vim
