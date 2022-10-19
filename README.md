@@ -7,13 +7,9 @@ alacritty-shell is a dynamic theme chooser based on the `alacritty.yml`
 
 ## requirements
 
-### yq
+### yq (optional)
 
-**NOTE** recommended to install `yq`
-
-`yq` is used to add builtin themes `add_theme_name`
-
-It isn't required if you choose to not use the `add_theme_name` command
+`yq` is used to add built-in themes `add_alacritty_darcula-dark`
 
 [install](https://github.com/mikefarah/yq#install)
 
@@ -22,7 +18,7 @@ It isn't required if you choose to not use the `add_theme_name` command
 [Alacritty color-schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
 describes how to use multiple schemes.
 
-[Alacritty themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
+[alacritty-shell themes wiki](https://github.com/casonadams/alacritty-shell/wiki/Themes)
 
  **Note** add `index: 208` = `orange`
 
@@ -69,16 +65,16 @@ ALACRITTY_SHELL="${HOME}/.alacritty-shell"
 
 ## usage
 
-### change terminal colors (tab complete)
-
-```sh
-alacritty_theme_name
-```
-
 ### add a builtin theme (tab complete)
 
 ```sh
-add_theme_name
+add_alacritty_darcula-dark
+```
+
+### change terminal colors (tab complete)
+
+```sh
+alacritty_darcula-dark
 ```
 
 ### using with vim
