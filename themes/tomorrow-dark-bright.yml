@@ -1,5 +1,6 @@
 schemes:
   tomorrow-dark-bright: &tomorrow-dark-bright
+    transparent_background_colors: true
     primary:
       background: '0x000000'
       foreground: '0xeaeaea'

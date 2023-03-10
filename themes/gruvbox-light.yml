@@ -1,5 +1,6 @@
 schemes:
   gruvbox-light: &gruvbox-light
+    transparent_background_colors: true
     primary:
       background: "0xfbf1c7"
       foreground: "0x504945"

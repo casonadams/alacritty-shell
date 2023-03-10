@@ -1,5 +1,6 @@
 schemes:
   code-dark: &code-dark
+    transparent_background_colors: true
     primary:
       background: "0x1e1e1e"
       foreground: "0xc6c6c6"

@@ -1,5 +1,6 @@
 schemes:
   apprentice: &apprentice
+    transparent_background_colors: true
     primary:
       background: "0x262626"
       foreground: "0xBCBCBC"

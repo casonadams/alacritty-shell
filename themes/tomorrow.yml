@@ -1,5 +1,6 @@
 schemes:
   tomorrow: &tomorrow
+    transparent_background_colors: true
     primary:
       background: "0xffffff"
       foreground: "0x4d4d4c"

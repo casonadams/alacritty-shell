@@ -1,5 +1,6 @@
 schemes:
   axual-dark: &axual-dark
+    transparent_background_colors: true
     primary:
       background: "0x113851"
       foreground: "0xd8d7cd"

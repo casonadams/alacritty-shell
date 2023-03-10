@@ -1,5 +1,6 @@
 schemes:
   solarized-dark: &solarized-dark
+    transparent_background_colors: true
     primary:
       background: "0x002b36"
       foreground: "0x93a1a1"

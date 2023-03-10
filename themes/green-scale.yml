@@ -1,5 +1,6 @@
 schemes:
   green-scale: &green-scale
+    transparent_background_colors: true
     primary:
       background: "0x081d08"
       foreground: "0x4aa23c"

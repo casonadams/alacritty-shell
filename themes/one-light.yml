@@ -1,5 +1,6 @@
 schemes:
   one-light: &one-light
+    transparent_background_colors: true
     primary:
       background: "0xfafafa"
       foreground: "0x383a42"

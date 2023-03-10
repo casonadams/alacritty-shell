@@ -1,5 +1,6 @@
 schemes:
   iterm: &iterm
+    transparent_background_colors: true
     primary:
       background: "0x101421"
       foreground: "0xfffbf6"

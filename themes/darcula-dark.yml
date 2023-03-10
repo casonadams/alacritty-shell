@@ -1,5 +1,6 @@
 schemes:
   darcula-dark: &darcula-dark
+    transparent_background_colors: true
     primary:
       background: "0x282828"
       foreground: "0xA9B7C6"

@@ -1,5 +1,6 @@
 schemes:
   github-dark: &github-dark
+    transparent_background_colors: true
     primary:
       background: "0x101216"
       foreground: "0x8b949e"

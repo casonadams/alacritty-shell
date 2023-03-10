@@ -1,5 +1,6 @@
 schemes:
   grey-scale: &grey-scale
+    transparent_background_colors: true
     primary:
       background: "0x101010"
       foreground: "0xb9b9b9"

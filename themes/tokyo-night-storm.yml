@@ -1,5 +1,6 @@
 schemes:
   tokyo-night-storm: &tokyo-night-storm
+    transparent_background_colors: true
     primary:
       background: "0x24283b"
       foreground: "0xa9b1d6"
