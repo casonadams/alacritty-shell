@@ -9,7 +9,13 @@ alacritty-shell is a dynamic theme chooser based on the `alacritty.yml`
 
 ### yq
 
-`yq` is used to update the alacritty.yml file
+- `yq` is used to update the alacritty.yml file
+- check that the version is greater than `4.31`
+
+```sh
+❯ yq --version
+yq (https://github.com/mikefarah/yq/) version v4.31.2
+```
 
 [install](https://github.com/mikefarah/yq#install)
 
