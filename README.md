@@ -7,9 +7,9 @@ alacritty-shell is a dynamic theme chooser based on the `alacritty.yml`
 
 ## requirements
 
-### yq (optional)
+### yq
 
-`yq` is used to add built-in themes `add_alacritty_darcula-dark`
+`yq` is used to update the alacritty.yml file
 
 [install](https://github.com/mikefarah/yq#install)
 
